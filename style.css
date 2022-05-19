@@ -47,33 +47,6 @@ section:nth-child(5), section:nth-child(7){
     position:relative;
 }
 
-nav{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding:3rem 7rem 0 7rem;
-}
-nav img{
-    width:clamp(8rem,12vw,12rem);
-    height:2rem;
-}
-nav a{
-    background-color: transparent;
-    border: 2px solid hsl(322, 100%, 66%);
-    color:hsl(322, 100%, 66%);
-    font-size: clamp(.8rem,1.125vw,1.125rem);
-    padding: .3em 2em .2em 2em;
-    text-align: center;
-    height:2.5em;
-    box-shadow: none;
-}
-nav a:hover{
-    color:white;
-    border-color:pink;
-    box-shadow: none;
-    transform: none;
-    background-color:hsl(322, 100%, 66%);
-}
 .wrapper{
     width:80%;
     margin:0 auto;
@@ -103,6 +76,37 @@ nav a:hover{
 .container p{
     width:90%;
 }
+
+/* ================================================== NAV ============================================= */
+nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:3rem 7rem 0 7rem;
+}
+nav img{
+    width:clamp(8rem,12vw,12rem);
+    height:2rem;
+}
+nav a{
+    background-color: transparent;
+    border: 2px solid hsl(322, 100%, 66%);
+    color:hsl(322, 100%, 66%);
+    font-size: clamp(.8rem,1.125vw,1.125rem);
+    padding: .3em 2em .2em 2em;
+    text-align: center;
+    height:2.5em;
+    box-shadow: none;
+}
+nav a:hover{
+    color:white;
+    border-color:pink;
+    box-shadow: none;
+    transform: none;
+    background-color:hsl(322, 100%, 66%);
+}
+
+/* ================================================== SECTION 1 ============================================= */
 #section1 h1{
     font-size:clamp(1.7rem,3vw,3rem);
 }
@@ -111,6 +115,8 @@ nav a:hover{
     width:55%;
     margin-bottom: 2rem;
 }
+
+/* ================================================== SECTION 3 ============================================= */
 #section3 p,#section3 h1{
     text-align: center;
 }
@@ -136,12 +142,18 @@ nav a:hover{
     justify-content: center;
     align-items: center;
 }
+
+/* ================================================== SECTION 5 ============================================= */
 #section5 .container{
     padding-left: 4em;
 }
+
+/* ================================================== SECTION 7 ============================================= */
 #section7 .container-block{
     padding-bottom: 8em;
 }
+
+/* ================================================== FOOTER ============================================= */
 footer{
     background-color: hsl(192, 100%, 9%);
     color:white;
@@ -194,6 +206,8 @@ footer{
     position:relative;
     padding-top:9rem;
 }
+
+/* ================================================== SUBSCRIBE ============================================= */
 form{
     display:flex;
     justify-content: space-between;
@@ -222,6 +236,7 @@ form button:hover{
     color: hsl(192, 100%, 9%);
 }
 
+/* ================================================== CURVESSSS ============================================= */
 .footer-curve{
     position:absolute;
     top:0;
@@ -274,6 +289,7 @@ form button:hover{
     background-size: cover;
 }
 
+/* ================================================== CREDITS ============================================= */
 .attribution { 
     font-size: 11px; 
     text-align: center; 
@@ -291,11 +307,8 @@ form button:hover{
      font-size: 11px; 
      box-shadow: none;
 }
-/* ======================================================================================================== */
+/* =============================================== MEDIA QUERIES ================================================== */
 @media (max-width:900px){
-    nav{
-        padding:2rem 1.5rem 0 1.5rem;
-    }
     .container p,h2{
         width:100%;
         text-align: center;
@@ -317,9 +330,18 @@ form button:hover{
     #section1 p,footer p{
         width:100%;
     }
+
+    /* ================================================== NAV ============================================= */
+    nav{
+        padding:2rem 1.5rem 0 1.5rem;
+    }
+
+    /* ================================================== SECTION 2 ============================================= */
     #section2 .wrapper{
         width:80%;
     }
+
+    /* ================================================== SECTION 3 ============================================= */
     #section3 img{
         left:0;
     }
@@ -327,12 +349,18 @@ form button:hover{
         justify-content: flex-end;
         padding-top:7rem;
     }
+
+    /* ================================================== SECTION 5 ============================================= */
     #section5 .container{
         padding-left: 0;
     }
+
+    /* ================================================== SECTION 7 ============================================= */
     #section7 .container-block{
         padding:0 0 9rem 0;
     }
+
+    /* ================================================== FOOTER ============================================= */
     footer .container:nth-child(2){
         order:-1;
     }
@@ -355,6 +383,8 @@ form button:hover{
         align-self: flex-end;
 
     }
+
+    /* ================================================== CURVES ============================================= */
     .footer-curve{
         background-image: url(images/bg-footer-top-mobile.svg);
         height:3rem;
